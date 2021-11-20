@@ -33,7 +33,7 @@ body {
 }
 
 .cover-image-mobile {
-  width: 100%;
+  width: 80%;
 }
 
 .content-container {
@@ -47,10 +47,11 @@ h2 {
   letter-spacing: 5px;
 }
 .red-text {
-  color: #cd3a24;
+  color: #2f80ed;
   padding: 5px;
   line-height: 42px;
   font-weight: 400;
+  margin-top: 20px;
 }
 
 .bold-announcement {
@@ -86,7 +87,14 @@ h2 {
 }
 
 .email-submit {
-  background-color: #423a3a;
+  background: rgb(105, 105, 105);
+  background: linear-gradient(
+    90deg,
+    rgba(105, 105, 105, 1) 25%,
+    rgba(79, 79, 79, 1) 60%,
+    rgba(66, 58, 58, 1) 100%
+  );
+  font-size: 2rem;
   color: #fff;
   height: 48px;
   width: 64px;
@@ -111,27 +119,26 @@ h2 {
   }
 
   body {
-    background: url("https://assets.codepen.io/6060109/destop-bg.png");
+    background: url("https://assets.codepen.io/6060109/waves.png");
     background-size: cover;
   }
 
   .all-container {
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
   }
 
   .content-container {
-    margin-left: 50px;
+    margin-left: 0px;
     padding: 0;
     text-align: left;
   }
 
   .desktop-right {
     display: block;
-    width: 50%;
-    background: url("https://assets.codepen.io/6060109/athlete-big.png");
+    width: 40%;
+    background: url("https://assets.codepen.io/6060109/shoes.png");
     background-size: cover;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 35% 100%);
   }
 
   .desktop-img {
@@ -142,9 +149,9 @@ h2 {
 
   .adidas-logo {
     display: block;
-    margin: 20% 0 25% 0;
+    margin: 20% 0 20% 0;
     /* margin-left: 0px;
-    margin-bottom: 100px; */
+      margin-bottom: 100px; */
   }
 
   h2 {
