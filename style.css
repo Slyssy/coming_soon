@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  min-width: 100%;
+  min-height: 100vh;
+  font-family: AdiHaus;
+}
+
+body {
+  display: flex;
+}
+
+.all-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: adiHaus;
+  src: url(Fonts/AdiHaus_Regular/AdiHaus_Regular.ttf);
+}
+
+@font-face {
+  font-family: adiHaus_Bold;
+  src: url(Fonts/AdiHaus_Bold/AdiHaus_Bold.ttf);
+}
+.adidas-logo {
+  display: block;
+  margin: 20px auto;
+}
+
+.cover-image-mobile {
+  width: 100%;
+}
+
+.content-container {
+  padding: 20px 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 48px;
+  padding: 5px;
+  letter-spacing: 5px;
+}
+.red-text {
+  color: #cd3a24;
+  padding: 5px;
+  line-height: 42px;
+  font-weight: 400;
+}
+
+.bold-announcement {
+  font-family: adiHaus_Bold;
+  color: #423a3a;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.announcement-text {
+  color: #333;
+  font-size: 14px;
+  margin: 15px 32px;
+  line-height: 28px;
+}
+
+.email-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: -1;
+}
+
+#email {
+  border: 1px solid #333;
+  border-right: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  height: 48px;
+  width: 247px;
+  border-radius: 3px 0 0 3px;
+  /* margin-top: 30px; */
+}
+
+.email-submit {
+  background-color: #423a3a;
+  color: #fff;
+  height: 48px;
+  width: 64px;
+  box-sizing: border-box;
+  border-radius: 0 3px 3px 0;
+  /* margin-top: 30px; */
+}
+
+.desktop-img {
+  display: none;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .cover-image-mobile {
+    display: none;
+  }
+
+  body {
+    background: url("https://assets.codepen.io/6060109/destop-bg.png");
+    background-size: cover;
+  }
+
+  .all-container {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .content-container {
+    margin-left: 50px;
+    padding: 0;
+    text-align: left;
+  }
+
+  .desktop-right {
+    display: block;
+    width: 50%;
+    background: url("https://assets.codepen.io/6060109/athlete-big.png");
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 35% 100%);
+  }
+
+  .desktop-img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .adidas-logo {
+    display: block;
+    margin: 20% 0 25% 0;
+    /* margin-left: 0px;
+    margin-bottom: 100px; */
+  }
+
+  h2 {
+    font-size: 64px;
+  }
+
+  .red-text {
+    line-height: 64px;
+  }
+
+  .bold-announcement {
+    line-height: 71px;
+  }
+
+  .announcement-text {
+    font-size: 16px;
+    margin: 20px 0;
+  }
+
+  .email-form {
+    justify-content: flex-start;
+  }
+  .email-input {
+    flex-basis: 80%;
+  }
+
+  #email {
+    width: 100%;
+  }
+}
