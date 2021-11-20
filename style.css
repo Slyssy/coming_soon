@@ -11,6 +11,7 @@ html {
 
 body {
   display: flex;
+  position: relative;
 }
 
 .all-container {
@@ -102,6 +103,27 @@ h2 {
 
 .desktop-img {
   display: none;
+}
+
+.option-links {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.option2:link,
+.option2:visited {
+  display: inline-block;
+  margin-right: 20px;
+  color: white;
+  padding: 3px;
+  background-color: lightgrey;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.option2:hover {
+  background-color: #2f80ed;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
